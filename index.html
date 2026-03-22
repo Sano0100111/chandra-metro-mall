@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Chandra Metro Mall | Shop · Watch · Eat · Virugambakkam Chennai</title>
+<meta name="description" content="Chandra Metro Mall — Chennai's favourite shopping & entertainment destination in Virugambakkam. INOX Cinemas, D-Mart, Food Court & 50+ stores on Arcot Road."/>
+<meta name="keywords" content="Chandra Metro Mall, Virugambakkam mall, Chennai mall, INOX Chennai, D-Mart Virugambakkam, Arcot Road mall, shopping Chennai"/>
+<meta name="author" content="Chandra Metro Mall"/>
+
+<!-- Open Graph (WhatsApp / Facebook preview) -->
+<meta property="og:title" content="Chandra Metro Mall — Virugambakkam, Chennai"/>
+<meta property="og:description" content="Shop · Watch · Eat — INOX Cinemas, D-Mart & 50+ stores on Arcot Road, Virugambakkam."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://sano0100111.github.io/chandra-metro-mall/"/>
+<meta property="og:site_name" content="Chandra Metro Mall"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chandra Metro Mall — Virugambakkam, Chennai"/>
+<meta name="twitter:description" content="INOX Cinemas, D-Mart & 50+ stores on Arcot Road. Open 10AM–10PM daily."/>
+
+<!-- Favicon emoji -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏬</text></svg>"/>
+
+<!-- Google Search -->
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://sano0100111.github.io/chandra-metro-mall/"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,Arial,sans-serif;background:#04080f;color:#daeeff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:inherit}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-thumb{background:#38bdf8;border-radius:99px}
+
+/* TOKENS */
+:root{
+  --sky:#38bdf8;--teal:#06b6d4;--blue:#3b82f6;--indigo:#6366f1;
+  --bg:#04080f;--bg2:#060d18;--card:#091422;--card2:#0b1c30;
+  --border:rgba(56,189,248,.12);--muted:#4a6e8a;--max:1100px;
+}
+
+/* UTILS */
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 5%}
+.tag{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);display:block;margin-bottom:8px}
+.bar{width:36px;height:3px;border-radius:99px;background:linear-gradient(90deg,var(--sky),transparent);margin-bottom:14px}
+.h2{font-size:clamp(24px,5vw,42px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:10px}
+.sub{font-size:14px;color:var(--muted);line-height:1.8;max-width:480px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;font-size:13px;font-weight:700;padding:12px 22px;border-radius:10px;border:none;transition:transform .2s,opacity .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);opacity:.9}
+.btn-sky{background:var(--sky);color:#04080f;box-shadow:0 4px 20px rgba(56,189,248,.3)}
+.btn-teal{background:var(--teal);color:#04080f;box-shadow:0 4px 20px rgba(6,182,212,.3)}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 4px 20px rgba(59,130,246,.3)}
+.btn-out{background:transparent;color:#daeeff;border:1px solid rgba(56,189,248,.25)}
+.btn-out:hover{border-color:var(--sky);color:var(--sky)}
+.sec{padding:72px 0}
+.sec-alt{background:var(--bg2)}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:999;height:60px;display:flex;align-items:center;padding:0 5%;transition:background .3s}
+#nav.stuck{background:rgba(4,8,15,.95);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--border)}
+.nav-logo{display:flex;align-items:center;gap:9px}
+.nav-gem{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--sky),var(--indigo));display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(56,189,248,.35)}
+.nav-title{font-size:14px;font-weight:800;color:#fff}
+.nav-sub{font-size:9px;color:var(--sky);letter-spacing:.06em;text-transform:uppercase}
+.nav-links{display:flex;gap:24px;list-style:none;margin-left:auto;margin-right:20px}
+.nav-links a{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--sky)}
+.open-pill{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--teal);background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.25);border-radius:99px;padding:4px 11px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+.ham{display:none;background:none;border:1px solid var(--border);color:#daeeff;border-radius:8px;padding:7px}
+.ham:hover{border-color:var(--sky)}
+
+/* DRAWER */
+.drawer{position:fixed;top:0;right:0;bottom:0;width:260px;z-index:1100;background:var(--bg2);border-left:1px solid var(--border);transform:translateX(110%);transition:transform .3s cubic-bezier(.4,0,.2,1);padding:68px 24px 28px;display:flex;flex-direction:column;gap:2px}
+.drawer.open{transform:translateX(0)}
+.drawer a{font-size:15px;font-weight:500;color:var(--muted);padding:12px 0;border-bottom:1px solid rgba(56,189,248,.05);transition:color .2s}
+.drawer a:hover{color:var(--sky)}
+.dx{position:absolute;top:16px;right:16px;background:none;border:none;color:#daeeff;font-size:20px}
+.veil{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1050;display:none}
+.veil.open{display:block}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:80px 5% 60px}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 65% 50% at 20% 30%,rgba(59,130,246,.2) 0%,transparent 55%),radial-gradient(ellipse 55% 45% at 80% 70%,rgba(6,182,212,.14) 0%,transparent 50%),radial-gradient(ellipse 40% 35% at 10% 85%,rgba(99,102,241,.12) 0%,transparent 50%),#04080f}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(56,189,248,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 20%,transparent 75%);animation:gpan 20s linear infinite}
+@keyframes gpan{from{background-position:0 0}to{background-position:60px 60px}}
+.orb{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;animation:ofloat var(--d,12s) ease-in-out infinite alternate}
+.o1{width:350px;height:350px;background:rgba(59,130,246,.16);top:-80px;left:-80px;--d:13s}
+.o2{width:300px;height:300px;background:rgba(6,182,212,.13);bottom:-60px;right:-60px;--d:10s}
+.o3{width:250px;height:250px;background:rgba(99,102,241,.12);bottom:25%;left:5%;--d:15s}
+@keyframes ofloat{from{transform:translate(0,0)}to{transform:translate(24px,16px)}}
+.hero-body{position:relative;z-index:2;width:100%;max-width:720px}
+.hero-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.28);border-radius:99px;padding:6px 16px;margin-bottom:22px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7dd3fc}
+.hero-h1{font-size:clamp(34px,9vw,86px);font-weight:900;line-height:1.0;color:#fff;margin-bottom:6px}
+.hero-h1 .line2{background:linear-gradient(135deg,var(--sky),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;display:block}
+.hero-p{font-size:clamp(13px,2vw,16px);color:rgba(255,255,255,.5);line-height:1.7;margin:16px auto 28px;max-width:440px}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.dist-bar{margin-top:18px;display:inline-flex;align-items:center;gap:9px;background:rgba(56,189,248,.06);border:1px solid rgba(56,189,248,.16);border-radius:11px;padding:9px 16px}
+#dtxt{font-size:12px;color:#daeeff;font-weight:500}
+#dbtn{font-size:11px;font-weight:700;color:var(--sky);background:none;border:none;padding:0;text-decoration:underline;text-underline-offset:3px}
+.hero-stats{position:relative;z-index:2;display:flex;justify-content:center;flex-wrap:wrap;gap:28px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(56,189,248,.1)}
+.stat{text-align:center}
+.snum{font-size:32px;font-weight:900;line-height:1}
+.slbl{font-size:10px;color:var(--muted);margin-top:4px;letter-spacing:.06em;text-transform:uppercase}
+.s1{color:var(--sky)}.s2{color:var(--teal)}.s3{color:#22d3ee}.s4{color:var(--indigo)}
+
+/* TICKER */
+.ticker{padding:10px 0;overflow:hidden;white-space:nowrap;background:#081830;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.tick-in{display:inline-flex;animation:roll 28s linear infinite}
+.tick-in span{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#c8e8ff;padding:0 24px}
+.tick-in span::before{content:'✦ ';color:var(--sky);opacity:.6}
+@keyframes roll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* FEATURES */
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:44px}
+.fc{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 22px;transition:transform .25s,border-color .25s;position:relative;overflow:hidden}
+.fc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--fg);opacity:0;transition:opacity .3s}
+.fc:hover{transform:translateY(-6px);border-color:rgba(56,189,248,.3)}
+.fc:hover::before{opacity:1}
+.fc:nth-child(1){--fg:linear-gradient(90deg,var(--sky),var(--teal))}
+.fc:nth-child(2){--fg:linear-gradient(90deg,var(--teal),#22d3ee)}
+.fc:nth-child(3){--fg:linear-gradient(90deg,var(--blue),var(--sky))}
+.fc:nth-child(4){--fg:linear-gradient(90deg,var(--indigo),var(--blue))}
+.fc:nth-child(5){--fg:linear-gradient(90deg,#22d3ee,var(--indigo))}
+.fc:nth-child(6){--fg:linear-gradient(90deg,var(--sky),var(--indigo))}
+.fic{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px;background:rgba(56,189,248,.1);border:1px solid var(--border);transition:transform .25s}
+.fc:hover .fic{transform:scale(1.1) rotate(-5deg)}
+.ft{font-size:15px;font-weight:700;color:#fff;margin-bottom:6px}
+.fd{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* DISTANCE */
+.dist-sec{background:linear-gradient(135deg,rgba(59,130,246,.08),rgba(6,182,212,.06));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.dist-card{background:var(--card2);border:1px solid var(--border);border-radius:20px;padding:32px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.dist-title{font-size:20px;font-weight:800;color:#fff;margin-bottom:6px}
+.dist-sub{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:14px}
+.dist-result{display:flex;align-items:center;gap:12px;margin-top:14px}
+.dist-bubble{background:linear-gradient(135deg,var(--blue),var(--teal));border-radius:14px;padding:16px 22px;text-align:center;min-width:110px;box-shadow:0 6px 22px rgba(59,130,246,.28)}
+#dkm{font-size:28px;font-weight:900;color:#fff;line-height:1}
+#dunit{font-size:10px;color:rgba(255,255,255,.75);margin-top:2px;font-weight:600}
+#dinfo{font-size:13px;color:#daeeff;line-height:1.6}
+#dinfo strong{color:var(--sky)}
+.dist-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+
+/* MOVIES */
+.mov-row{display:flex;gap:14px;overflow-x:auto;padding-bottom:12px;margin-top:36px;scroll-snap-type:x mandatory}
+.mov-row::-webkit-scrollbar{height:3px}
+.mov-row::-webkit-scrollbar-thumb{background:var(--sky);border-radius:99px}
+.mv{flex-shrink:0;width:170px;border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--card);transition:transform .25s;scroll-snap-align:start}
+.mv:hover{transform:translateY(-6px)}
+.mp{width:100%;aspect-ratio:2/3;display:flex;align-items:center;justify-content:center;font-size:48px;position:relative}
+.mg{position:absolute;top:8px;left:8px;font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:99px;background:rgba(0,0,0,.75)}
+.mi{padding:11px 11px 14px}
+.mt{font-size:13px;font-weight:700;color:#fff;margin-bottom:3px;line-height:1.2}
+.mm{font-size:10px;color:var(--muted);margin-bottom:7px}
+.ms{font-size:11px;font-weight:700;color:#7dd3fc}
+.mbtn{display:block;width:100%;margin-top:8px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.22);color:var(--sky);font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:6px;border-radius:7px;text-align:center;transition:background .2s}
+.mbtn:hover{background:var(--sky);color:#04080f}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-visual{background:linear-gradient(145deg,#091422,#0c1c34);border:1px solid var(--border);border-radius:20px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative}
+.about-em{font-size:72px;filter:drop-shadow(0 6px 18px rgba(56,189,248,.3))}
+.about-badge{position:absolute;bottom:-14px;right:-14px;background:linear-gradient(135deg,var(--sky),var(--indigo));border-radius:14px;padding:14px 18px;text-align:center;box-shadow:0 8px 28px rgba(56,189,248,.28)}
+.bn{font-size:26px;font-weight:900;color:#fff;line-height:1}
+.bt{font-size:10px;color:rgba(255,255,255,.75);font-weight:700}
+.checks{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.chk{display:flex;align-items:center;gap:10px;font-size:14px;color:#daeeff}
+.cd{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;font-weight:800}
+.chk:nth-child(1) .cd{background:rgba(56,189,248,.15);color:var(--sky)}
+.chk:nth-child(2) .cd{background:rgba(6,182,212,.15);color:var(--teal)}
+.chk:nth-child(3) .cd{background:rgba(34,211,238,.15);color:#22d3ee}
+.chk:nth-child(4) .cd{background:rgba(59,130,246,.15);color:var(--sky)}
+.chk:nth-child(5) .cd{background:rgba(99,102,241,.15);color:var(--indigo)}
+
+/* STORES */
+.stores-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:36px}
+.sc{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 12px;text-align:center;transition:transform .2s,border-color .2s}
+.sc:hover{transform:translateY(-5px);border-color:rgba(56,189,248,.35)}
+.si{font-size:26px;margin-bottom:8px;transition:transform .25s;display:block}
+.sc:hover .si{transform:scale(1.2) rotate(-5deg)}
+.sn{font-size:12px;font-weight:700;color:#fff;margin-bottom:3px}
+.sc-cat{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+
+/* REVIEWS */
+.rev-top{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:36px}
+.big-n{font-size:72px;font-weight:900;line-height:1;background:linear-gradient(135deg,var(--sky),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.big-s{font-size:20px;color:#7dd3fc;margin-bottom:4px}
+.big-sub{font-size:12px;color:var(--muted)}
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.rc{background:var(--card2);border:1px solid var(--border);border-radius:16px;padding:20px;transition:border-color .2s,transform .2s}
+.rc:hover{transform:translateY(-4px);border-color:rgba(56,189,248,.28)}
+.rh{display:flex;align-items:center;gap:10px;margin-bottom:11px}
+.rav{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
+.rn{font-size:13px;font-weight:700;color:#fff}
+.rd{font-size:10px;color:var(--muted);margin-top:2px}
+.rs{color:#7dd3fc;font-size:12px;margin-bottom:8px}
+.rt{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* OFFERS */
+.off-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:36px}
+.oc{border-radius:18px;padding:28px 22px;position:relative;overflow:hidden;transition:transform .25s}
+.oc:hover{transform:translateY(-7px)}
+.oc1{background:linear-gradient(145deg,#050f22,#08172f);border:1px solid rgba(56,189,248,.2)}
+.oc2{background:linear-gradient(145deg,#041422,#06192c);border:1px solid rgba(6,182,212,.18)}
+.oc3{background:linear-gradient(145deg,#080b22,#0a0e2c);border:1px solid rgba(99,102,241,.2)}
+.op{display:inline-block;font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:99px;margin-bottom:12px}
+.oc1 .op{background:rgba(56,189,248,.1);color:var(--sky)}
+.oc2 .op{background:rgba(6,182,212,.1);color:var(--teal)}
+.oc3 .op{background:rgba(99,102,241,.13);color:var(--indigo)}
+.ot{font-size:18px;font-weight:800;color:#fff;margin-bottom:7px;line-height:1.2}
+.od{font-size:13px;color:var(--muted);line-height:1.65}
+.ob{position:absolute;right:-8px;bottom:-8px;font-size:88px;opacity:.07;pointer-events:none;line-height:1}
+
+/* FEEDBACK */
+.fb-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:44px}
+.fb-h2{font-size:clamp(22px,4vw,36px);font-weight:900;background:linear-gradient(135deg,var(--sky),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px}
+.fb-perks{margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.fp{display:flex;align-items:center;gap:10px;font-size:13px;color:#daeeff}
+.fpi{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;border:1px solid var(--border);background:rgba(56,189,248,.08)}
+.fext{margin-top:22px;padding:16px 18px;background:var(--card2);border:1px solid var(--border);border-radius:12px}
+.fext-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:9px}
+.fext-row{display:flex;gap:8px;flex-wrap:wrap}
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px 24px}
+.fr{margin-bottom:14px}
+.fr label{display:block;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.fr input,.fr textarea,.fr select{width:100%;background:var(--bg2);border:1px solid var(--border);border-radius:9px;padding:11px 13px;color:#daeeff;font-family:inherit;font-size:14px;outline:none;transition:border-color .2s;resize:none}
+.fr input::placeholder,.fr textarea::placeholder{color:var(--muted)}
+.fr input:focus,.fr textarea:focus,.fr select:focus{border-color:rgba(56,189,248,.4);box-shadow:0 0 0 3px rgba(56,189,248,.07)}
+.fr select option{background:var(--bg2)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stars{display:flex;gap:5px;flex-direction:row-reverse;justify-content:flex-end}
+.stars input{display:none}
+.stars label{font-size:26px;color:var(--muted);cursor:pointer;transition:color .15s,transform .15s}
+.stars input:checked ~ label,.stars label:hover,.stars label:hover ~ label{color:var(--sky);transform:scale(1.15)}
+.sub-btn{width:100%;padding:14px;border-radius:11px;border:none;background:linear-gradient(135deg,var(--sky),var(--teal));color:#04080f;font-size:14px;font-weight:800;cursor:pointer;transition:opacity .2s,transform .15s;box-shadow:0 6px 22px rgba(56,189,248,.28);margin-top:4px}
+.sub-btn:hover{opacity:.9;transform:translateY(-2px)}
+.sub-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+/* HOURS */
+.hrs-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:44px}
+.hc{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px 26px}
+.hc-title{font-size:13px;font-weight:700;color:#fff;margin-bottom:16px}
+.hr{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(56,189,248,.04);font-size:13px}
+.hr:last-child{border-bottom:none}
+.hd{color:var(--muted)}
+.ht{color:#daeeff;font-weight:500}
+.hr.td .hd{color:var(--sky);font-weight:700}
+.hr.td .ht{color:var(--sky);font-weight:700}
+.td-b{background:rgba(56,189,248,.1);color:var(--sky);font-size:9px;font-weight:800;padding:2px 6px;border-radius:99px;margin-left:5px}
+.ct-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px 26px;display:flex;flex-direction:column;gap:16px}
+.ct-row{display:flex;gap:12px}
+.ct-ico{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;border:1px solid var(--border)}
+.ico-s{background:rgba(56,189,248,.08)}
+.ico-t{background:rgba(6,182,212,.08)}
+.ico-b{background:rgba(59,130,246,.08)}
+.ico-i{background:rgba(99,102,241,.08)}
+.ct-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.ct-val{font-size:13px;color:#daeeff;font-weight:500;line-height:1.5}
+.ct-val a{color:var(--sky)}
+
+/* MAP */
+.map-card{border-radius:20px;overflow:hidden;border:1px solid var(--border);background:var(--card2)}
+.map-vis{height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden;cursor:pointer;text-decoration:none;background:linear-gradient(145deg,rgba(59,130,246,.09),rgba(6,182,212,.06)),var(--card);transition:background .2s}
+.map-vis:hover{background:linear-gradient(145deg,rgba(59,130,246,.17),rgba(6,182,212,.13)),var(--card2)}
+.map-gg{position:absolute;inset:0;background-image:linear-gradient(rgba(56,189,248,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.04) 1px,transparent 1px);background-size:38px 38px}
+.map-pin{font-size:56px;filter:drop-shadow(0 6px 20px rgba(56,189,248,.45));animation:pb 2.2s ease-in-out infinite;position:relative;z-index:1}
+@keyframes pb{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.map-name{font-size:16px;font-weight:800;color:#fff;position:relative;z-index:1}
+.map-addr{font-size:11px;color:var(--muted);position:relative;z-index:1}
+.map-hint{display:flex;align-items:center;gap:5px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.22);border-radius:99px;padding:5px 12px;font-size:10px;font-weight:700;color:var(--sky);position:relative;z-index:1}
+.map-foot{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border)}
+.ma{display:flex;align-items:center;justify-content:center;gap:5px;padding:13px;font-size:11px;font-weight:700;color:var(--muted);border-right:1px solid var(--border);transition:background .2s,color .2s;text-decoration:none}
+.ma:last-child{border-right:none}
+.ma:hover{background:rgba(56,189,248,.06);color:var(--sky)}
+
+/* FOOTER */
+footer{background:#020609;border-top:1px solid var(--border);padding:44px 0 24px}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+.fb p{font-size:12px;color:var(--muted);line-height:1.7;margin-top:12px;max-width:210px}
+.fcol h4{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--sky);margin-bottom:14px}
+.fcol a{display:block;font-size:12px;color:var(--muted);padding:4px 0;transition:color .2s}
+.fcol a:hover{color:#7dd3fc}
+.fbot{border-top:1px solid rgba(56,189,248,.05);padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fcopy{font-size:11px;color:var(--muted)}
+.socs{display:flex;gap:8px}
+.soc{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:13px;transition:border-color .2s,background .2s}
+.soc:hover{border-color:var(--sky);background:rgba(56,189,248,.09)}
+
+/* FLOATS */
+.floats{position:fixed;bottom:22px;right:18px;z-index:900;display:flex;flex-direction:column;gap:9px}
+.flt{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;box-shadow:0 5px 18px rgba(0,0,0,.4);transition:transform .2s;border:none}
+.flt:hover{transform:scale(1.1)}
+.fw{background:#25D366}
+.fc2{background:var(--blue);font-size:16px}
+.fst{background:linear-gradient(135deg,var(--sky),var(--indigo))}
+.fup{background:var(--card2);border:1px solid var(--border);color:var(--sky);font-size:15px}
+
+/* TOAST */
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(120%);background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:12px 20px;display:flex;align-items:center;gap:9px;font-size:13px;font-weight:500;z-index:2000;transition:transform .4s cubic-bezier(.34,1.56,.64,1),opacity .4s;opacity:0;box-shadow:0 10px 32px rgba(0,0,0,.45);white-space:nowrap}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+/* RESPONSIVE */
+@media(max-width:1023px){
+  .nav-links,.open-pill,.nav-links+a{display:none}
+  .ham{display:flex}
+  .about-grid,.fb-wrap,.hrs-grid,.fg{grid-template-columns:1fr;gap:24px}
+  .about-badge{right:8px;bottom:-10px}
+  .dist-card{grid-template-columns:1fr}
+  .fb{grid-column:1/-1}
+  .map-foot{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .hero-stats{gap:18px}
+  .snum{font-size:26px}
+  .hero-h1{font-size:clamp(30px,10vw,48px)}
+  .f2{grid-template-columns:1fr}
+  .fbot{flex-direction:column;text-align:center}
+  .map-vis{height:220px}
+  .big-n{font-size:56px}
+  .sec{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-gem" style="background:#fff;padding:2px;overflow:hidden"><img src="data:image/jpeg;base64,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" style="width:36px;height:36px;object-fit:cover;border-radius:8px;display:block"/></div>
+    <div><div class="nav-title">Chandra Metro Mall</div><div class="nav-sub">Virugambakkam · Chennai</div></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#features">Facilities</a></li>
+    <li><a href="#movies">Movies</a></li>
+    <li><a href="#stores">Stores</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+    <li><a href="#hours">Visit</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:9px;margin-left:auto">
+    <div class="open-pill"><span class="dot"></span>Open Now</div>
+    <a href="tel:+919789937575" class="btn btn-sky" style="padding:8px 16px;font-size:11px">📞 Call</a>
+  </div>
+  <button class="ham" onclick="openD()" style="margin-left:12px">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+<div class="veil" id="veil" onclick="closeD()"></div>
+<div class="drawer" id="drawer">
+  <button class="dx" onclick="closeD()">✕</button>
+  <a href="#features" onclick="closeD()">🏬 Facilities</a>
+  <a href="#movies" onclick="closeD()">🎬 Movies</a>
+  <a href="#stores" onclick="closeD()">🛍️ Stores</a>
+  <a href="#reviews" onclick="closeD()">⭐ Reviews</a>
+  <a href="#feedback" onclick="closeD()">💬 Feedback</a>
+  <a href="#hours" onclick="closeD()">🕙 Hours</a>
+  <a href="#distance" onclick="closeD()">📍 My Distance</a>
+  <a href="tel:+919789937575" style="color:var(--sky);margin-top:14px">📞 +91 97899 37575</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  <div class="hero-body">
+    <div style="margin-bottom:18px">
+      <img src="data:image/jpeg;base64,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" alt="Chandra Metro Mall" style="width:90px;height:90px;object-fit:cover;border-radius:18px;border:2px solid rgba(56,189,248,.3);box-shadow:0 8px 28px rgba(56,189,248,.2);margin:0 auto;display:block"/>
+    </div>
+    <div class="hero-pill"><span class="dot"></span>Open Today · 10:00 AM – 10:00 PM</div>
+    <h1 class="hero-h1">Chennai's<span class="line2">Favourite Mall</span></h1>
+    <p class="hero-p">Shopping · Blockbusters · Food & more — all under one roof on Arcot Road, Virugambakkam.</p>
+    <div class="hero-btns">
+      <a href="#stores" class="btn btn-sky">Explore Stores →</a>
+      <a href="#movies" class="btn btn-out">🎬 Now Showing</a>
+      <a href="#distance" class="btn btn-teal" style="padding:12px 18px">📍 Distance</a>
+    </div>
+    <div class="dist-bar">
+      <span>📍</span>
+      <span id="dtxt">How far am I from the mall?</span>
+      <button id="dbtn" onclick="calcDist()">Find out</button>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="snum s1" id="c1">50+</div><div class="slbl">Stores</div></div>
+    <div class="stat"><div class="snum s2" id="c2">5</div><div class="slbl">INOX Screens</div></div>
+    <div class="stat"><div class="snum s3" id="c3">4.0★</div><div class="slbl">Google Rating</div></div>
+    <div class="stat"><div class="snum s4" id="c4">15K+</div><div class="slbl">Reviews</div></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="tick-in">
+    <span>INOX Multiplex</span><span>D-Mart Superstore</span><span>Food Court</span>
+    <span>Free Parking</span><span>50+ Stores</span><span>Open 7 Days</span>
+    <span>Arcot Road</span><span>4.0 Google Rating</span>
+    <span>INOX Multiplex</span><span>D-Mart Superstore</span><span>Food Court</span>
+    <span>Free Parking</span><span>50+ Stores</span><span>Open 7 Days</span>
+    <span>Arcot Road</span><span>4.0 Google Rating</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="sec sec-alt" id="features">
+  <div class="wrap">
+    <div><span class="tag">What We Offer</span><div class="bar"></div><h2 class="h2">Everything in One Place</h2><p class="sub">From blockbuster movies to daily grocery runs — built for the complete family.</p></div>
+    <div class="feat-grid">
+      <div class="fc"><div class="fic">🎬</div><div class="ft">INOX Multiplex</div><div class="fd">5 premium screens with Dolby sound. Latest Tamil, Hindi & English releases every week.</div></div>
+      <div class="fc"><div class="fic">🛒</div><div class="ft">D-Mart Superstore</div><div class="fd">Unbeatable prices on groceries, kitchen essentials, clothing and household goods.</div></div>
+      <div class="fc"><div class="fic">🍽️</div><div class="ft">Food Court & Cafés</div><div class="fd">Snacks, full meals, desserts and beverages. Perfect for family lunch or pre-show bite.</div></div>
+      <div class="fc"><div class="fic">🅿️</div><div class="ft">Ample Parking</div><div class="fd">Free parking on D-Mart purchases over ₹350. Space for cars and two-wheelers.</div></div>
+      <div class="fc"><div class="fic">👗</div><div class="ft">Fashion & Lifestyle</div><div class="fd">Apparel, accessories and footwear for men, women and kids at everyday low prices.</div></div>
+      <div class="fc"><div class="fic">🏠</div><div class="ft">Home & Decor</div><div class="fd">Cutlery, utensils, plastic ware and home goods. All your household needs sorted.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DISTANCE -->
+<section class="sec dist-sec" id="distance">
+  <div class="wrap">
+    <div><span class="tag">Plan Your Route</span><div class="bar"></div><h2 class="h2">How Far Are You?</h2><p class="sub">We'll calculate your real distance using your device location.</p></div>
+    <div style="margin-top:28px">
+      <div class="dist-card">
+        <div>
+          <div class="dist-title">📍 Chandra Metro Mall</div>
+          <div class="dist-sub">262, Arcot Road, Rajeswari Colony, Virugambakkam, Chennai – 600 092<br/>Open today: <strong style="color:var(--sky)">10:00 AM – 10:00 PM</strong></div>
+          <div class="dist-result" id="dres" style="display:none">
+            <div class="dist-bubble"><div id="dkm">--</div><div id="dunit">km away</div></div>
+            <div id="dinfo">Loading…</div>
+          </div>
+          <div class="dist-btns">
+            <button class="btn btn-teal" onclick="calcDist()" id="lbtn">📍 Get My Distance</button>
+            <a href="https://maps.google.com/?cid=8126499061330737917" target="_blank" rel="noopener" class="btn btn-out">🗺️ Google Maps</a>
+            <a href="#" target="_blank" rel="noopener" class="btn btn-blue" id="nbtn" style="display:none">🚗 Navigate</a>
+          </div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-size:64px;filter:drop-shadow(0 6px 20px rgba(56,189,248,.3))">🏬</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:8px">Virugambakkam<br/>Chennai</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOVIES -->
+<section class="sec sec-alt" id="movies">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px">
+      <div><span class="tag">INOX · 5 Screens</span><div class="bar"></div><h2 class="h2">Now Showing</h2><p class="sub">Weekend shows from 8:00 AM. Book online or at the counter.</p></div>
+      <a href="https://in.bookmyshow.com/explore/movies-chennai" target="_blank" rel="noopener" class="btn btn-sky">🎟️ BookMyShow</a>
+    </div>
+    <div class="mov-row">
+      <div class="mv"><div class="mp" style="background:linear-gradient(145deg,#081533,#102060)">🚀<span class="mg" style="color:#7dd3fc">Sci-Fi</span></div><div class="mi"><div class="mt">Kalki 2898 AD</div><div class="mm">Telugu · 3h 01m · UA</div><div class="ms">★★★★★ 4.7</div><a href="https://in.bookmyshow.com" target="_blank" rel="noopener" class="mbtn">Book Tickets</a></div></div>
+      <div class="mv"><div class="mp" style="background:linear-gradient(145deg,#05101e,#0a1e3a)">🦁<span class="mg" style="color:#22d3ee">Action</span></div><div class="mi"><div class="mt">Vettaiyan</div><div class="mm">Tamil · 2h 50m · A</div><div class="ms">★★★★☆ 4.5</div><a href="https://in.bookmyshow.com" target="_blank" rel="noopener" class="mbtn">Book Tickets</a></div></div>
+      <div class="mv"><div class="mp" style="background:linear-gradient(145deg,#041020,#071828)">💙<span class="mg" style="color:#06b6d4">Drama</span></div><div class="mi"><div class="mt">Pushpa 2</div><div class="mm">Hindi · 3h 22m · A</div><div class="ms">★★★★★ 4.8</div><a href="https://in.bookmyshow.com" target="_blank" rel="noopener" class="mbtn">Book Tickets</a></div></div>
+      <div class="mv"><div class="mp" style="background:linear-gradient(145deg,#08082a,#101050)">🕵️<span class="mg" style="color:#6366f1">Thriller</span></div><div class="mi"><div class="mt">Indian 3</div><div class="mm">Tamil · 2h 40m · UA</div><div class="ms">★★★★☆ 4.2</div><a href="https://in.bookmyshow.com" target="_blank" rel="noopener" class="mbtn">Book Tickets</a></div></div>
+      <div class="mv"><div class="mp" style="background:linear-gradient(145deg,#040e22,#07163a)">🎭<span class="mg" style="color:#38bdf8">Comedy</span></div><div class="mi"><div class="mt">Lucky Baskhar</div><div class="mm">Telugu · 2h 20m · U</div><div class="ms">★★★★☆ 4.3</div><a href="https://in.bookmyshow.com" target="_blank" rel="noopener" class="mbtn">Book Tickets</a></div></div>
+    </div>
+    <div style="text-align:center;margin-top:22px">
+      <p style="font-size:12px;color:var(--muted);margin-bottom:12px">Weekend shows from <strong style="color:var(--sky)">8:00 AM</strong></p>
+      <a href="https://in.bookmyshow.com/explore/movies-chennai" target="_blank" rel="noopener" class="btn btn-out">View All Shows →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="about-visual">
+          <div class="about-em">🏬</div>
+          <div style="font-size:14px;font-weight:700;color:#7dd3fc">Chandra Metro Mall</div>
+          <div style="font-size:11px;color:var(--muted)">Arcot Road, Virugambakkam</div>
+          <div class="about-badge"><div class="bn">4.0★</div><div class="bt">Google Reviews</div></div>
+        </div>
+      </div>
+      <div>
+        <span class="tag">About The Mall</span><div class="bar"></div>
+        <h2 class="h2">A Landmark on Arcot Road</h2>
+        <p class="sub">Located at 262, Arcot Road, Virugambakkam, Chandra Metro Mall has served Chennai families as a trusted shopping and entertainment hub with over 15,000 Google reviews.</p>
+        <div class="checks">
+          <div class="chk"><div class="cd">✓</div>Trusted community shopping destination</div>
+          <div class="chk"><div class="cd">✓</div>Easily accessible on Arcot Road</div>
+          <div class="chk"><div class="cd">✓</div>Family-friendly with diverse stores</div>
+          <div class="chk"><div class="cd">✓</div>Premium 5-screen INOX experience</div>
+          <div class="chk"><div class="cd">✓</div>Best-value shopping with D-Mart</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORES -->
+<section class="sec sec-alt" id="stores">
+  <div class="wrap">
+    <div><span class="tag">Our Tenants</span><div class="bar"></div><h2 class="h2">Popular Stores</h2><p class="sub">50+ brands across retail, food, entertainment and lifestyle.</p></div>
+    <div class="stores-grid">
+      <div class="sc"><span class="si">🎬</span><div class="sn">INOX Cinemas</div><div class="sc-cat">Entertainment</div></div>
+      <div class="sc"><span class="si">🛒</span><div class="sn">D-Mart</div><div class="sc-cat">Supermarket</div></div>
+      <div class="sc"><span class="si">🍕</span><div class="sn">Food Court</div><div class="sc-cat">Food & Snacks</div></div>
+      <div class="sc"><span class="si">👟</span><div class="sn">Footwear Zone</div><div class="sc-cat">Footwear</div></div>
+      <div class="sc"><span class="si">👗</span><div class="sn">Fashion Wear</div><div class="sc-cat">Clothing</div></div>
+      <div class="sc"><span class="si">🍳</span><div class="sn">Kitchen World</div><div class="sc-cat">Home & Kitchen</div></div>
+      <div class="sc"><span class="si">📱</span><div class="sn">Electronics</div><div class="sc-cat">Gadgets</div></div>
+      <div class="sc"><span class="si">💄</span><div class="sn">Beauty & Care</div><div class="sc-cat">Health & Beauty</div></div>
+      <div class="sc"><span class="si">☕</span><div class="sn">Café Corner</div><div class="sc-cat">Beverages</div></div>
+      <div class="sc"><span class="si">🎮</span><div class="sn">Game Zone</div><div class="sc-cat">Entertainment</div></div>
+      <div class="sc"><span class="si">📚</span><div class="sn">Book Store</div><div class="sc-cat">Books</div></div>
+      <div class="sc"><span class="si">💍</span><div class="sn">Jewellery Hub</div><div class="sc-cat">Accessories</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="rev-top">
+      <div><span class="tag">What Customers Say</span><div class="bar"></div><h2 class="h2">Customer Reviews</h2></div>
+      <div style="display:flex;align-items:center;gap:16px">
+        <div class="big-n">4.0</div>
+        <div><div class="big-s">★★★★☆</div><div class="big-sub">15,000+ Google Reviews</div>
+        <a href="https://www.google.com/maps/place/Chandra+Metro+Mall/@13.0467637,80.1904012" target="_blank" rel="noopener" class="btn btn-out" style="margin-top:8px;padding:7px 14px;font-size:11px">Leave a Review ↗</a></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <div class="rc"><div class="rh"><div class="rav" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6)">P</div><div><div class="rn">Priya R.</div><div class="rd">2 weeks ago</div></div></div><div class="rs">★★★★★</div><div class="rt">"Great place for a family outing! INOX has amazing screens and D-Mart is super convenient. Parking was easy too!"</div></div>
+      <div class="rc"><div class="rh"><div class="rav" style="background:linear-gradient(135deg,#0ea5e9,#06b6d4)">K</div><div><div class="rn">Karthik M.</div><div class="rd">1 month ago</div></div></div><div class="rs">★★★★☆</div><div class="rt">"We come every weekend for movies. Food stalls have decent options and prices are reasonable. Good value overall."</div></div>
+      <div class="rc"><div class="rh"><div class="rav" style="background:linear-gradient(135deg,#22d3ee,#06b6d4)">S</div><div><div class="rn">Sowmya V.</div><div class="rd">3 weeks ago</div></div></div><div class="rs">★★★★☆</div><div class="rt">"D-Mart here has the best prices for groceries. Very convenient location on Arcot Road. Highly recommend!"</div></div>
+      <div class="rc"><div class="rh"><div class="rav" style="background:linear-gradient(135deg,#6366f1,#3b82f6)">A</div><div><div class="rn">Arun T.</div><div class="rd">1 month ago</div></div></div><div class="rs">★★★★★</div><div class="rt">"Watched a new Tamil release here — screen quality was top-notch! INOX never disappoints. Sound system is brilliant."</div></div>
+      <div class="rc"><div class="rh"><div class="rav" style="background:linear-gradient(135deg,#38bdf8,#6366f1)">R</div><div><div class="rn">Rekha N.</div><div class="rd">2 months ago</div></div></div><div class="rs">★★★☆☆</div><div class="rt">"Good place for essentials and movies. The mall is a bit older but D-Mart and INOX make it worth the visit."</div></div>
+      <div class="rc"><div class="rh"><div class="rav" style="background:linear-gradient(135deg,#0ea5e9,#1d4ed8)">V</div><div><div class="rn">Vijay S.</div><div class="rd">3 weeks ago</div></div></div><div class="rs">★★★★★</div><div class="rt">"Free parking with D-Mart purchase is brilliant! Staff are helpful and the place is always clean."</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="sec sec-alt" id="offers">
+  <div class="wrap">
+    <div><span class="tag">Deals & Highlights</span><div class="bar"></div><h2 class="h2">Current Offers</h2></div>
+    <div class="off-grid">
+      <div class="oc oc1"><div class="op">D-Mart Deal</div><div class="ot">Free Parking on ₹350+ Purchase</div><div class="od">Shop at D-Mart and get complimentary parking. Drive in, shop big, save on both.</div><div class="ob">🛒</div></div>
+      <div class="oc oc2"><div class="op">INOX Weekend</div><div class="ot">Early Shows from 8 AM on Weekends</div><div class="od">INOX opens at 8 AM on Saturdays and Sundays. First show, best seats.</div><div class="ob">🎬</div></div>
+      <div class="oc oc3"><div class="op">Always Open</div><div class="ot">Open Every Day Till 10 PM</div><div class="od">7 days a week, we stay open late. Shop after work, catch a night show.</div><div class="ob">🌙</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section class="sec" id="feedback">
+  <div class="wrap">
+    <div class="fb-wrap">
+      <div>
+        <span class="tag">Share Your Experience</span><div class="bar"></div>
+        <div class="fb-h2">We'd Love Your Feedback</div>
+        <p class="sub">Your reviews help us improve. Tell us about your visit.</p>
+        <div class="fb-perks">
+          <div class="fp"><div class="fpi">⭐</div>Rate your overall experience</div>
+          <div class="fp"><div class="fpi">💬</div>Share what you loved or could improve</div>
+          <div class="fp"><div class="fpi">📋</div>Choose which area you're reviewing</div>
+          <div class="fp"><div class="fpi">✅</div>We read every single review!</div>
+        </div>
+        <div class="fext">
+          <div class="fext-lbl">Also review us on</div>
+          <div class="fext-row">
+            <a href="https://www.google.com/maps/place/Chandra+Metro+Mall/@13.0467637,80.1904012" target="_blank" rel="noopener" class="btn btn-out" style="padding:7px 12px;font-size:11px">🔍 Google</a>
+            <a href="https://in.bookmyshow.com" target="_blank" rel="noopener" class="btn btn-out" style="padding:7px 12px;font-size:11px">🎬 BookMyShow</a>
+            <a href="https://www.justdial.com/Chennai/Chandra-Metro-Mall-Arcot-Road-Virugambakkam" target="_blank" rel="noopener" class="btn btn-out" style="padding:7px 12px;font-size:11px">📞 JustDial</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="form-card">
+          <form id="fbf" onsubmit="submitFb(event)" novalidate>
+            <div class="f2">
+              <div class="fr"><label>Your Name</label><input type="text" id="fn" placeholder="e.g. Priya R." required/></div>
+              <div class="fr"><label>Phone (optional)</label><input type="tel" id="fp2" placeholder="+91 98765 43210"/></div>
+            </div>
+            <div class="fr">
+              <label>Reviewing area</label>
+              <select id="fa" required><option value="">Select area…</option><option>INOX Cinemas</option><option>D-Mart Superstore</option><option>Food Court</option><option>Parking</option><option>Shopping Stores</option><option>Overall Experience</option><option>Staff & Service</option><option>Cleanliness</option></select>
+            </div>
+            <div class="fr"><label>Your Rating</label>
+              <div class="stars">
+                <input type="radio" id="s5" name="r" value="5"/><label for="s5">★</label>
+                <input type="radio" id="s4" name="r" value="4"/><label for="s4">★</label>
+                <input type="radio" id="s3" name="r" value="3"/><label for="s3">★</label>
+                <input type="radio" id="s2" name="r" value="2"/><label for="s2">★</label>
+                <input type="radio" id="s1" name="r" value="1"/><label for="s1">★</label>
+              </div>
+            </div>
+            <div class="fr"><label>Your Feedback</label><textarea id="fm" rows="4" placeholder="Tell us about your experience…" required></textarea></div>
+            <div class="fr"><label>When did you visit?</label><input type="date" id="fd2"/></div>
+            <button type="submit" class="sub-btn" id="sb">Send Feedback 🚀</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS -->
+<section class="sec sec-alt" id="hours">
+  <div class="wrap">
+    <div><span class="tag">Plan Your Visit</span><div class="bar"></div><h2 class="h2">Hours & Contact</h2></div>
+    <div class="hrs-grid">
+      <div class="hc">
+        <div class="hc-title">🕙 Opening Hours</div>
+        <div class="hr" data-d="Monday"><span class="hd">Monday</span><span class="ht">10:00 AM – 10:00 PM</span></div>
+        <div class="hr" data-d="Tuesday"><span class="hd">Tuesday</span><span class="ht">10:00 AM – 10:00 PM</span></div>
+        <div class="hr" data-d="Wednesday"><span class="hd">Wednesday</span><span class="ht">10:00 AM – 10:00 PM</span></div>
+        <div class="hr" data-d="Thursday"><span class="hd">Thursday</span><span class="ht">10:00 AM – 10:00 PM</span></div>
+        <div class="hr" data-d="Friday"><span class="hd">Friday</span><span class="ht">10:00 AM – 10:00 PM</span></div>
+        <div class="hr" data-d="Saturday"><span class="hd">Saturday</span><span class="ht">8:00 AM – 10:00 PM</span></div>
+        <div class="hr" data-d="Sunday"><span class="hd">Sunday</span><span class="ht">8:00 AM – 10:00 PM</span></div>
+      </div>
+      <div>
+        <div class="ct-card">
+          <div class="ct-row"><div class="ct-ico ico-s">📍</div><div><div class="ct-lbl">Address</div><div class="ct-val">262, Arcot Road, Rajeswari Colony,<br/>Virugambakkam, Chennai – 600 092</div></div></div>
+          <div class="ct-row"><div class="ct-ico ico-t">📞</div><div><div class="ct-lbl">Phone</div><div class="ct-val"><a href="tel:+919789937575">+91 97899 37575</a><br/><span style="font-size:11px;color:var(--muted)">INOX: 044 23771166</span></div></div></div>
+          <div class="ct-row"><div class="ct-ico ico-b">✉️</div><div><div class="ct-lbl">Email</div><div class="ct-val"><a href="mailto:cmm@chandrabuilders.in">cmm@chandrabuilders.in</a></div></div></div>
+          <div class="ct-row"><div class="ct-ico ico-i">🌐</div><div><div class="ct-lbl">Website</div><div class="ct-val"><a href="http://www.chandrabuilders.in" target="_blank" rel="noopener">chandrabuilders.in</a></div></div></div>
+          <a href="https://maps.google.com/?cid=8126499061330737917" target="_blank" rel="noopener" class="btn btn-sky" style="margin-top:4px">📍 Get Directions on Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div style="padding:0 5% 72px;max-width:1100px;margin:0 auto">
+  <div class="map-card">
+    <a class="map-vis" href="https://maps.google.com/?cid=8126499061330737917" target="_blank" rel="noopener">
+      <div class="map-gg"></div>
+      <div class="map-pin">📍</div>
+      <div class="map-name">Chandra Metro Mall</div>
+      <div class="map-addr">262, Arcot Road, Virugambakkam, Chennai 600092</div>
+      <div class="map-hint">↗ Tap to open in Google Maps</div>
+    </a>
+    <div class="map-foot">
+      <a class="ma" href="https://maps.google.com/?cid=8126499061330737917" target="_blank" rel="noopener">🗺️ View</a>
+      <a class="ma" href="https://maps.google.com/?saddr=My+Location&daddr=Chandra+Metro+Mall,+Virugambakkam,+Chennai" target="_blank" rel="noopener">🚗 Drive</a>
+      <a class="ma" href="https://maps.google.com/?cid=8126499061330737917&layer=transit" target="_blank" rel="noopener">🚌 Transit</a>
+      <a class="ma" href="https://maps.google.com/?q=parking+near+Chandra+Metro+Mall+Chennai" target="_blank" rel="noopener">🅿️ Park</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div class="fb">
+        <div class="nav-logo"><div class="nav-gem" style="background:#fff;padding:2px;overflow:hidden"><img src="data:image/jpeg;base64,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" style="width:36px;height:36px;object-fit:cover;border-radius:8px;display:block"/></div><div><div class="nav-title">Chandra Metro Mall</div><div class="nav-sub">Virugambakkam · Chennai</div></div></div>
+        <p>A trusted neighbourhood shopping & entertainment destination. 50+ stores, INOX Multiplex, D-Mart on Arcot Road.</p>
+      </div>
+      <div class="fcol"><h4>Explore</h4><a href="#features">Facilities</a><a href="#movies">Now Showing</a><a href="#stores">Stores</a><a href="#reviews">Reviews</a><a href="#feedback">Feedback</a></div>
+      <div class="fcol"><h4>Visit</h4><a href="#hours">Opening Hours</a><a href="#distance">My Distance</a><a href="https://maps.google.com/?cid=8126499061330737917" target="_blank" rel="noopener">Directions</a><a href="https://maps.google.com/?saddr=My+Location&daddr=Chandra+Metro+Mall" target="_blank" rel="noopener">Navigate Here</a></div>
+      <div class="fcol"><h4>Links</h4><a href="tel:+919789937575">📞 Call Us</a><a href="mailto:cmm@chandrabuilders.in">✉️ Email Us</a><a href="https://in.bookmyshow.com/explore/movies-chennai" target="_blank" rel="noopener">🎬 INOX Tickets</a><a href="https://www.dmart.in" target="_blank" rel="noopener">🛒 D-Mart Online</a></div>
+    </div>
+    <div class="fbot">
+      <div class="fcopy">© 2025 Chandra Metro Mall, Virugambakkam, Chennai.</div>
+      <div class="socs">
+        <a class="soc" href="https://www.facebook.com" target="_blank" rel="noopener">📘</a>
+        <a class="soc" href="https://www.instagram.com" target="_blank" rel="noopener">📸</a>
+        <a class="soc" href="https://maps.google.com/?cid=8126499061330737917" target="_blank" rel="noopener">🗺️</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATS -->
+<div class="floats">
+  <a href="https://wa.me/919789937575?text=Hi+I+have+a+query+about+Chandra+Metro+Mall" target="_blank" rel="noopener" class="flt fw">💬</a>
+  <a href="tel:+919789937575" class="flt fc2">📞</a>
+  <button class="flt fst" onclick="document.getElementById('feedback').scrollIntoView({behavior:'smooth'})">⭐</button>
+  <button class="flt fup" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</div>
+<div class="toast" id="toast"><span id="tico">✅</span><span id="tmsg">Done!</span></div>
+
+<script>
+// Nav
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('stuck',scrollY>55));
+
+// Drawer
+function openD(){document.getElementById('drawer').classList.add('open');document.getElementById('veil').classList.add('open');document.body.style.overflow='hidden'}
+function closeD(){document.getElementById('drawer').classList.remove('open');document.getElementById('veil').classList.remove('open');document.body.style.overflow=''}
+
+// Scroll reveal — simple, lightweight
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.style.transform='none';io.unobserve(x.target)}}),{threshold:.08});
+document.querySelectorAll('.fc,.rc,.oc,.sc,.mv').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity .5s ease, transform .5s ease';io.observe(el)});
+
+// Today highlight
+const TODAY=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][new Date().getDay()];
+document.querySelectorAll('.hr').forEach(r=>{if(r.dataset.d===TODAY){r.classList.add('td');const t=r.querySelector('.ht');if(t)t.insertAdjacentHTML('beforeend','<span class="td-b">Today</span>')}});
+
+// Distance
+const MLAT=13.0467637,MLNG=80.1904012;
+function hav(a,b,c,d){const R=6371,dl=(c-a)*Math.PI/180,dg=(d-b)*Math.PI/180;const x=Math.sin(dl/2)**2+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(dg/2)**2;return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
+function eta(km){const c=Math.round(km/30*60),w=Math.round(km/5*60);if(c<1)return'Less than 1 min by car';if(c<60)return`~${c} min by car · ~${w} min walk`;return`~${Math.floor(c/60)}h ${c%60}m by car`}
+function calcDist(){
+  if(!navigator.geolocation){toast('⚠️','Geolocation not supported');return}
+  const db=document.getElementById('dbtn'),lb=document.getElementById('lbtn'),dt=document.getElementById('dtxt');
+  if(db){db.textContent='Locating…';db.disabled=true}
+  if(lb){lb.textContent='📍 Locating…';lb.disabled=true}
+  if(dt)dt.textContent='Getting your location…';
+  navigator.geolocation.getCurrentPosition(pos=>{
+    const{latitude:lat,longitude:lng}=pos.coords;
+    const km=hav(lat,lng,MLAT,MLNG);
+    const str=km<1?`${Math.round(km*1000)} m`:`${km.toFixed(1)} km`;
+    if(db){db.textContent='📍 '+str+' away';db.disabled=false}
+    if(dt)dt.textContent='You are '+str+' away';
+    const res=document.getElementById('dres');
+    if(res){res.style.display='flex';document.getElementById('dkm').textContent=km<1?Math.round(km*1000):km.toFixed(1);document.getElementById('dunit').textContent=km<1?'metres away':'km away';document.getElementById('dinfo').innerHTML=`<strong>${str} from mall</strong><br/>${eta(km)}`}
+    const nb=document.getElementById('nbtn');
+    if(nb){nb.href=`https://www.google.com/maps/dir/${lat},${lng}/${MLAT},${MLNG}`;nb.style.display='inline-flex'}
+    if(lb){lb.textContent='📍 Recalculate';lb.disabled=false}
+    toast('📍',`You are ${str} from Chandra Metro Mall!`);
+  },err=>{
+    if(db){db.textContent='Find out';db.disabled=false}
+    if(lb){lb.textContent='📍 Get My Distance';lb.disabled=false}
+    if(dt)dt.textContent='How far am I from the mall?';
+    toast('⚠️',{1:'Location access denied.',2:'Location unavailable.',3:'Timed out.'}[err.code]||'Could not get location.');
+  },{timeout:12000,maximumAge:0});
+}
+
+// Feedback
+function submitFb(e){
+  e.preventDefault();
+  const n=document.getElementById('fn').value.trim(),a=document.getElementById('fa').value,m=document.getElementById('fm').value.trim(),r=document.querySelector('input[name="r"]:checked');
+  if(!n){toast('⚠️','Please enter your name');return}
+  if(!a){toast('⚠️','Please select an area');return}
+  if(!m){toast('⚠️','Please write your feedback');return}
+  if(!r){toast('⭐','Please give a star rating');return}
+  const btn=document.getElementById('sb');btn.disabled=true;btn.textContent='Sending…';
+  setTimeout(()=>{btn.textContent='Sent! Thank you 🎉';toast('✅',`Thanks ${n}! Your ${r.value}★ review was received.`);setTimeout(()=>{document.getElementById('fbf').reset();btn.disabled=false;btn.textContent='Send Feedback 🚀'},2000)},1400);
+}
+
+// Toast
+let tt;
+function toast(i,m){clearTimeout(tt);document.getElementById('tico').textContent=i;document.getElementById('tmsg').textContent=m;document.getElementById('toast').classList.add('show');tt=setTimeout(()=>document.getElementById('toast').classList.remove('show'),4000)}
+</script>
+</body>
+</html>
